@@ -14,7 +14,7 @@ const Login = () => {
         
         console.log("Submitting login with data:", { email, password }); // Log data being submitted
 
-        axios.post('http://localhost:3001/login', { email, password })
+        axios.post('https://login-without-storing-password-2.onrender.com/login', { email, password })
             .then(result => {
                 console.log(result);
                 if (result.data === "Success") {
